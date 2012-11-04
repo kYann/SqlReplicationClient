@@ -36,6 +36,7 @@ namespace SqlReplicationClient.Ado
         protected virtual IDbCommand CreateCommand(IDbConnection cnx)
         {
             var cmd = this.InternalCommand();
+            cmd.Transaction = null;
             cmd.Connection = cnx;
             cmd.Transaction = this.connection.GetCurrentTransaction();
             cmd.CommandText = this.CommandText;
