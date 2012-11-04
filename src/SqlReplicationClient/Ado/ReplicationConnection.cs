@@ -203,7 +203,8 @@ namespace SqlReplicationClient.Ado
         public void Dispose()
         {
             this.connections.ForEach(c => c.Dispose());
-            this.transaction.Dispose();
+            if (this.transaction != null)
+                this.transaction.Dispose();
             this.connections = new List<IDbConnection>();
         }
     }

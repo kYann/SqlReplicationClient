@@ -1,2 +1,7 @@
+Postgres isolation level :
+http://www.postgresql.org/docs/9.1/static/transaction-iso.html
+
+
+For nhibernate :
 http://ayende.com/blog/3987/nhibernate-ipreupdateeventlistener-ipreinserteventlistener
 
