@@ -1,0 +1,2 @@
+http://ayende.com/blog/3987/nhibernate-ipreupdateeventlistener-ipreinserteventlistener
+
