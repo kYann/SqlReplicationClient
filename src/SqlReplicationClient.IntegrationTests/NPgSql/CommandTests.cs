@@ -521,8 +521,8 @@ namespace NpgsqlTests
             GetNpDbParam(command.Parameters["p0"]).Value = @"{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{";
                        
             
-            var dr = command.ExecuteReader();
-            Assert.NotNull(dr);
+            var nb = command.ExecuteNonQuery();
+            Assert.Equal(1, nb);
             
             
             var command2 = this.TheConnection.CreateCommand();
